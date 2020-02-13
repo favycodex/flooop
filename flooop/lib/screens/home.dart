@@ -4,6 +4,8 @@ class HomeScreen extends StatefulWidget {
   _HomeScreenState createState() => _HomeScreenState();
 }
 
+class StatefulWidget {}
+
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
@@ -19,19 +21,28 @@ class _HomeScreenState extends State<HomeScreen> {
         ],
       ),
       drawer: Drawer(
-        child: ListView(
-          children: <Widget>[
-            ListTile(
-              leading: Icon(Icons.home),
-              title: Text('Home'),
-            ),
-            ListTile(
-              leading: Icon(Icons.library_music),
-              title: Text('Music'),
-            ),
-          ],
-        )
-      ),
+          child: ListView(
+        children: <Widget>[
+          ListTile(
+            leading: Icon(Icons.home),
+            title: Text('Home'),
+          ),
+          ListTile(
+            leading: Icon(Icons.library_music),
+            title: Text('Music'),
+          ),
+        ],
+      )),
     );
   }
 }
+
+class Scaffold {}
+
+class AppBar {}
+
+class BuildContext {}
+
+class State {}
+
+class Widget {}
