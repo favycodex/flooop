@@ -20,6 +20,22 @@ class _HomeScreenState extends State<HomeScreen> {
           SizedBox(width: 5.0),
         ],
       ),
+      body: Padding(
+        padding: EdgeInsets.symmetric(vertical: 15.0, horizontal: 20.0),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: <Widget>[
+            Text(
+              'Favy, Code City',
+              style: TextStyle(
+                fontWeight: FontWeight.w900,
+                color: Colors.black.withOpacity(0.8),
+                fontSize: 35.0,
+              ),
+            )
+          ],
+        ),
+      ),
       drawer: Drawer(
           child: ListView(
         children: <Widget>[
